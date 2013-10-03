@@ -7,3 +7,47 @@
 		text-align:center;
 	}
 }
+
+.m-background {
+	.the-cooks, .testimonials, .contact {
+		padding:40px 0 60px 0;
+		background-position: center center;
+	}
+	.the-cooks {
+		background-image:url(/content/media/images/the-cooks-background.jpg);
+	}
+	.the-cooks-info {
+		height:700px;
+		background:#ffffff;
+	}
+	.testimonials {
+		background-image:url(/content/media/images/testimonials-background.jpg);
+		background-position:top center;
+	}
+	.testimonials-info {
+		height:289px;
+		background:#ffffff;
+	}
+	.contact {
+		background-image:url(/content/media/images/contact-background.jpg);
+	}
+	.contact-info {
+		height:500px;
+		background:#ffffff;
+	}
+	background-size:cover;
+	width:100%;
+
+}
+
+.m-featured-events {
+	img {
+		margin-bottom:15px;
+	}
+}
+
+.m-press-box {
+	height:450px;
+	background:#ffffff;
+	border:1px solid;
+}
