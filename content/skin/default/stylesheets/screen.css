@@ -74,50 +74,70 @@ body {
 }
 
 /* line 9, ../sass/partials/_typography.scss */
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
+  margin: 0 0 .250em;
+  line-height: 1em;
 }
 
-/* line 13, ../sass/partials/_typography.scss */
+/* line 16, ../sass/partials/_typography.scss */
 h1 {
-  font-family: "Cuprum", sans-serif;
   font-size: 60px;
   letter-spacing: 14px;
-  line-height: 70px;
 }
 
-/* line 20, ../sass/partials/_typography.scss */
+/* line 21, ../sass/partials/_typography.scss */
 h2 {
-  font-family: verdana;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
   letter-spacing: 5px;
-  line-height: 40px;
+  font-size: 50px;
+}
+
+/* line 26, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 40px;
+}
+
+/* line 30, ../sass/partials/_typography.scss */
+h4 {
+  font-size: 30px;
+}
+
+/* line 34, ../sass/partials/_typography.scss */
+h5 {
+  font-size: 20px;
 }
 
 /* line 38, ../sass/partials/_typography.scss */
-.center-h1 h1 {
-  text-align: center;
-  padding: 40px 0 60px 0;
+h6 {
+  font-size: 16px;
 }
 
-/* line 45, ../sass/partials/_typography.scss */
-.l-container p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-top: 20px;
-  font-family: Helvetica;
+/* line 42, ../sass/partials/_typography.scss */
+p {
+  color: #000;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+/* line 48, ../sass/partials/_typography.scss */
+.text-center {
+  text-align: center;
 }
 
 /* line 1, ../sass/_base.scss */
-a {
-  text-decoration: none;
+body {
+  font: 14px/18px Helvetica, Arial, sans-serif;
 }
 
 /* line 5, ../sass/_base.scss */
-section {
-  margin-bottom: 30px;
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 8, ../sass/_base.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -126,29 +146,68 @@ section {
   margin: 0px auto;
 }
 
-/* line 7, ../sass/_layout.scss */
-.l-navigation-horisontal ul {
-  list-style: none;
+/* line 6, ../sass/_layout.scss */
+.l-innercontainer {
+  display: table;
+  width: 100%;
+  padding: 30px 0 0;
+}
+
+/* line 12, ../sass/_layout.scss */
+.l-navigation-horizontal {
   display: table;
   margin: 0px auto;
 }
-/* line 12, ../sass/_layout.scss */
-.l-navigation-horisontal li {
-  float: left;
-  margin: 0 0 0 30px;
-}
 /* line 16, ../sass/_layout.scss */
-.l-navigation-horisontal a {
+.l-navigation-horizontal a {
   font-family: "Cuprum", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 22, ../sass/_layout.scss */
+.l-navigation-horizontal li {
+  float: left;
+  margin: 0 15px;
+}
+/* line 26, ../sass/_layout.scss */
+.l-navigation-horizontal a {
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 3px;
 }
-/* line 26, ../sass/_layout.scss */
-.l-navigation-horisontal > ul > li {
+/* line 32, ../sass/_layout.scss */
+.l-navigation-horizontal a:hover,
+.l-navigation-horizontal a .current {
+  text-decoration: none;
+  color: red;
+}
+/* line 39, ../sass/_layout.scss */
+.l-navigation-horizontal > ul > li {
   line-height: 43px;
+}
+
+/* line 46, ../sass/_layout.scss */
+.l-footer li {
+  margin: 0 10px;
+  line-height: 30px;
+}
+/* line 51, ../sass/_layout.scss */
+.l-footer a {
+  font-size: 16px;
+  letter-spacing: 4px;
+  border-right: 1px solid;
+  padding-right: 15px;
+  color: #000;
+}
+/* line 59, ../sass/_layout.scss */
+.l-footer li:last-child a {
+  border-right: none;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+.site-footer {
+  background: #ffffff;
+  padding: 6px 0 0 0;
 }
 
 /* line 1, ../sass/partials/_header.scss */
@@ -156,60 +215,130 @@ section {
   background: #000;
   position: fixed;
   width: 100%;
+  z-index: 100;
+}
+/* line 8, ../sass/partials/_header.scss */
+.site-header .l-navigation-horizontal > li {
+  line-height: 48px;
 }
 
-/* line 6, ../sass/modules/_images.scss */
+/* line 1, ../sass/modules/_blocks.scss */
+.m-block {
+  margin-bottom: 30px;
+}
+/* line 4, ../sass/modules/_blocks.scss */
+.m-block.last {
+  margin-bottom: 0;
+}
+
+/* line 2, ../sass/modules/_gallery.scss */
 .m-gallery h1 {
   text-align: center;
 }
 
-/* line 11, ../sass/modules/_images.scss */
+/* line 1, ../sass/modules/_images.scss */
 .m-background {
   background-size: cover;
   width: 100%;
 }
-/* line 12, ../sass/modules/_images.scss */
-.m-background .the-cooks, .m-background .testimonials, .m-background .contact {
+/* line 2, ../sass/modules/_images.scss */
+.m-background .featured-image {
+  position: relative;
+  background-image: url(/content/media/images/feat-img-top.jpg);
+  height: 440px;
+}
+/* line 6, ../sass/modules/_images.scss */
+.m-background .featured-image .logo {
+  position: absolute;
+  width: 226px;
+  display: block;
+  left: 50%;
+  margin-left: -113px;
+  top: 120px;
+}
+/* line 18, ../sass/modules/_images.scss */
+.m-background.the-cooks, .m-background.testimonials, .m-background.contact {
   padding: 40px 0 60px 0;
   background-position: center center;
 }
-/* line 16, ../sass/modules/_images.scss */
-.m-background .the-cooks {
+/* line 22, ../sass/modules/_images.scss */
+.m-background.the-cooks {
   background-image: url(/content/media/images/the-cooks-background.jpg);
 }
-/* line 19, ../sass/modules/_images.scss */
+/* line 25, ../sass/modules/_images.scss */
 .m-background .the-cooks-info {
-  height: 700px;
+  min-height: 700px;
   background: #ffffff;
 }
-/* line 23, ../sass/modules/_images.scss */
-.m-background .testimonials {
+/* line 29, ../sass/modules/_images.scss */
+.m-background.testimonials {
   background-image: url(/content/media/images/testimonials-background.jpg);
   background-position: top center;
 }
-/* line 27, ../sass/modules/_images.scss */
+/* line 33, ../sass/modules/_images.scss */
 .m-background .testimonials-info {
-  height: 289px;
+  min-height: 289px;
   background: #ffffff;
 }
-/* line 31, ../sass/modules/_images.scss */
-.m-background .contact {
+/* line 37, ../sass/modules/_images.scss */
+.m-background.contact {
   background-image: url(/content/media/images/contact-background.jpg);
+  padding: 40px 0 0 0;
 }
-/* line 34, ../sass/modules/_images.scss */
+/* line 41, ../sass/modules/_images.scss */
 .m-background .contact-info {
-  height: 500px;
+  min-height: 500px;
   background: #ffffff;
+  margin-bottom: 30px;
 }
 
-/* line 44, ../sass/modules/_images.scss */
-.m-featured-events img {
+/* line 1, ../sass/modules/_content.scss */
+.entry-title {
+  margin: 0 0 30px 0;
+}
+
+/* line 7, ../sass/modules/_content.scss */
+.m-featured-events a:hover img {
+  opacity: 0.6;
+}
+/* line 11, ../sass/modules/_content.scss */
+.m-featured-events li {
   margin-bottom: 15px;
+  display: block;
+  position: relative;
+}
+/* line 16, ../sass/modules/_content.scss */
+.m-featured-events span {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 7px;
+}
+/* line 23, ../sass/modules/_content.scss */
+.m-featured-events h2 {
+  line-height: 138px;
+}
+/* line 27, ../sass/modules/_content.scss */
+.m-featured-events .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  text-align: center;
+  padding: 0px 0;
+}
+/* line 38, ../sass/modules/_content.scss */
+.m-featured-events .image {
+  position: relative;
+  z-index: 20;
 }
 
-/* line 49, ../sass/modules/_images.scss */
+/* line 44, ../sass/modules/_content.scss */
 .m-press-box {
   height: 450px;
   background: #ffffff;
   border: 1px solid;
+  margin-bottom: 30px;
 }

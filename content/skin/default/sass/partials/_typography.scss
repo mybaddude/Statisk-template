@@ -6,48 +6,46 @@ body {
 	font-family: arial;
 }
 
-h1,h2 {
+h1,h2, h3,h4,h5,h6 {
+	font-family: $primaryFont;
 	text-transform:uppercase;
+	margin: 0 0 .250em;
+	line-height: 1em;
 }
 
 h1 {
-	font-family: $primaryFont;
 	font-size:60px;
 	letter-spacing:14px;
-	line-height:70px;
 }
 
 h2 {
-	font-family:verdana;
-	font-size:18px;
-	font-weight:bold;
-	margin-top:20px;
 	letter-spacing:5px;
-	line-height:40px;
+	font-size: 50px;
 }
 
 h3 {
-
+	font-size: 40px;
 }
 
 h4 {
-
+	font-size: 30px;
 }
 
-.center-h1 {
-	h1{
-		text-align:center;
-		padding:40px 0 60px 0;
-	}
+h5 {
+	font-size: 20px;
 }
 
-.l-container {
-	p{
-		font-size:14px;
-		line-height:24px;
-		margin-top:20px;
-		font-family:Helvetica;
-	}
+h6 {
+	font-size: 16px;
 }
 
+p {
+	color: #000;
+	font-size: 1em;
+	line-height: 1em;
+}
 
+.text-center {
+	text-align:center;
+	
+}

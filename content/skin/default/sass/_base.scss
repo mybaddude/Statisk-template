@@ -1,7 +1,13 @@
-a {
-	text-decoration:none;
+body {
+	font: 14px/18px Helvetica, Arial, sans-serif;
 }
 
-section{
-	margin-bottom:30px;
+a {
+	text-decoration: none;
+	color: #ffffff;
+	&:hover {
+		text-decoration: underline;
+	}
 }
+
+section{}

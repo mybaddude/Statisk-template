@@ -1,53 +1,49 @@
-.m-featured-image {
-	
-}
-
-.m-gallery {
-	h1 {
-		text-align:center;
-	}
-}
-
 .m-background {
-	.the-cooks, .testimonials, .contact {
+	.featured-image {
+		position: relative;
+		background-image:url(/content/media/images/feat-img-top.jpg);
+		height:440px;
+		.logo {
+			position: absolute;
+			width:226px;
+			display:block;
+			left: 50%;
+			margin-left: -113px;
+			top: 120px;
+		}
+	}
+
+	&.the-cooks, 
+	&.testimonials, 
+	&.contact {
 		padding:40px 0 60px 0;
 		background-position: center center;
 	}
-	.the-cooks {
+	&.the-cooks {
 		background-image:url(/content/media/images/the-cooks-background.jpg);
 	}
 	.the-cooks-info {
-		height:700px;
+		min-height:700px;
 		background:#ffffff;
 	}
-	.testimonials {
+	&.testimonials {
 		background-image:url(/content/media/images/testimonials-background.jpg);
 		background-position:top center;
 	}
 	.testimonials-info {
-		height:289px;
+		min-height:289px;
 		background:#ffffff;
 	}
-	.contact {
+	&.contact {
 		background-image:url(/content/media/images/contact-background.jpg);
+		padding:40px 0 0 0;
 	}
 	.contact-info {
-		height:500px;
+		min-height:500px;
 		background:#ffffff;
+		margin-bottom:30px;
 	}
 	background-size:cover;
 	width:100%;
 
-}
-
-.m-featured-events {
-	img {
-		margin-bottom:15px;
-	}
-}
-
-.m-press-box {
-	height:450px;
-	background:#ffffff;
-	border:1px solid;
 }
