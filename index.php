@@ -74,7 +74,53 @@
 						<div class="entry-title text-center">
 							<h1>featured menus</h1>
 						</div>
-						<img src="content/media/images/feat-menus.jpg">
+						<div class="m-feat">
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+							<div class="m-feat-item">
+								<div class="m-feat-border">
+										<a class="m-feat-content"href="#"><h4>an intimate holiday dinner</h4></a>
+								</div>
+							</div>
+						</div>
+						<div class="m-button">
+							<div class="m-button-border">	
+								<a class="m-button-content" href="#"><h5>additional menus</h5></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

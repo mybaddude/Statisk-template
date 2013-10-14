@@ -5,3 +5,62 @@
 		margin-bottom:0;
 	}
 }
+
+
+
+.m-feat {
+	text-align:center;
+
+	.m-feat-item {
+		display:inline-block;
+		width:245px;
+		height:130px;
+		margin:10px 6px 10px 6px;
+		@include box-sizing('border-box');
+	}
+	.m-feat-border {
+		border: 2px solid;
+		height: 100%;
+	}
+
+	.m-feat-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 15px 20px;
+		height:100px;
+	}
+
+	a {
+		display: block;
+		color: #000;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+	}
+}
+
+.m-button {
+	text-align: center;
+	width:245px;
+	margin: 10px auto;
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+		line-height: 60px;
+	}
+
+	.m-button-border {
+		border:2px solid;
+		height:100%;
+	}
+
+	.m-button-content {
+		padding:0 20px;
+	}
+
+	a {
+		display: block;
+		color: #000;
+	}
+
+}
